@@ -9,6 +9,8 @@
 
 =version_from   autoload/std.vim
 
+=script_id      2923
+
 =vim_version    >= 7.2
 
 =libpath        .

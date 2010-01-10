@@ -12,14 +12,15 @@
 
 # -------- meta section ------
 REPOSITORY = git://....../
-VERSION = 0.2
+VERSION = 0.22
 NAME = std.vim
 AUTHOR = Cornelius
 VERSION_FROM = autoload/std.vim
 LIBPATH = .
 EMAIL = cornelius.howl@gmail.com
 TYPE = autoload
-DISTNAME = std-vim-0.2
+SCRIPT_ID = 2923
+DISTNAME = std-vim-0.22
 VIM_VERSION = 7.2
 
 
@@ -79,8 +80,11 @@ VIM_SYNTAX_DIR = /Users/c9s/.vim/syntax
 # -------- file section ------
 VIMLIB = .
 VIMMETA = META
-TO_INST_VIMS = autoload/std.vim
-VIMS_TO_RUNT = autoload/std.vim \
+TO_INST_VIMS = doc/std.txt \
+	autoload/std.vim
+VIMS_TO_RUNT = doc/std.txt \
+	$(VIM_BASEDIR)/doc/std.txt \
+	autoload/std.vim \
 	$(VIM_BASEDIR)/autoload/std.vim
 
 
@@ -101,12 +105,15 @@ pure_install :
 install-deps : 
 
 link : 
+		$(NOECHO) $(LN_S) $(PWD)/doc/std.txt $(VIM_BASEDIR)/doc/std.txt
 		$(NOECHO) $(LN_S) $(PWD)/autoload/std.vim $(VIM_BASEDIR)/autoload/std.vim
 
 link-force : 
+		$(NOECHO) $(LN_SF) $(PWD)/doc/std.txt $(VIM_BASEDIR)/doc/std.txt
 		$(NOECHO) $(LN_SF) $(PWD)/autoload/std.vim $(VIM_BASEDIR)/autoload/std.vim
 
 unlink : 
+		$(NOECHO) $(RM) $(VIM_BASEDIR)/doc/std.txt
 		$(NOECHO) $(RM) $(VIM_BASEDIR)/autoload/std.vim
 
 manifest : 

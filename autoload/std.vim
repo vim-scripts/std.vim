@@ -1,6 +1,6 @@
 
 " Std.vim
-" Version: 0.2
+" Version: 0.22
 
 " FUNCTIONS: std#is_expired(file,expiry)
 " @expiry is in seconds
