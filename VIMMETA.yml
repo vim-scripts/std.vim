@@ -1,0 +1,12 @@
+---
+author: Cornelius
+email: cornelius.howl@gmail.com
+libpath: .
+name: std.vim
+repository: git://....../
+type: autoload
+version: 0.2
+version_from: autoload/std.vim
+vim_version:
+  op: '>='
+  version: 7.2

@@ -1,0 +1,7 @@
+autoload/std.vim
+Makefile
+MANIFEST
+MANIFEST.SKIP
+META
+README.mkd
+VIMMETA.yml

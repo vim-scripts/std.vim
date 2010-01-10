@@ -1,0 +1,16 @@
+
+=name           std.vim
+
+=author         Cornelius
+
+=email          cornelius.howl@gmail.com
+
+=type           autoload
+
+=version_from   autoload/std.vim
+
+=vim_version    >= 7.2
+
+=libpath        .
+
+=repository git://....../

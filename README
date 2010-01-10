@@ -1,0 +1,4 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2923
+
+standard util vim functions for reducing duplicated function code in each plugin ,  this vim function library is in progress. patches are welcome.
+
